@@ -15,7 +15,7 @@ main {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1000px 7fr;
+  grid-template-columns: 1fr 1000px 1fr;
   grid-template-areas: ". main .";
 }
 
