@@ -15,7 +15,7 @@ main {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1000px 7fr;
+  grid-template-columns: 1fr 1000px 1fr;
   grid-template-areas: ". main .";
 }
 
@@ -26,7 +26,6 @@ h1 {
 }
 
 h2 {
-  color: rgb(22, 122, 11);
   padding-top: 20px;
   padding-bottom: 10px;
 }
