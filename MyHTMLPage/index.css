@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  /* background-color: rgb(255, 173, 96); */
+  grid-area: main;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1000px 7fr;
+  grid-template-areas: ". main .";
+}
+
+h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 330%;
+}
+
+.myPhoto {
+  width: 100%;
+}
