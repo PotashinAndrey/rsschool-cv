@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(53, 53, 252);
+}
+
+main {
+  grid-area: main;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-areas: ". main .";
+}
+
+h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 330%;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.aboutMe {
+  font-size: 140%;
+}
+
+.contacts {
+  font-size: 130%;
+  margin-bottom: 50px;
+}
+
+.myPhoto {
+  width: 100%;
+}
+
