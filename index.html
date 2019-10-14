@@ -4,47 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="./utils/A.jpg" type="image/x-icon" />
-  <title>RSSchool resume</title>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="2slider.css">
+
+  <script src="slider.js" type="module"></script>
+  <script src="animated.js" type="module"></script>
+
+  <link rel="icon" href="utils/letter_a.png" type="image/x-icon" />
+  <title>Portfolio</title>
 </head>
 <body>
-  <main>
-    <h1>Potashin Andrey</h1>
-    <img src="./utils/DSC01294.jpg" alt="My photo" class="myPhoto">
+  <div class="middle">
+
+    <header>
+      <span class="logo">
+        <img class="circleLogo" src="utils/circleLogo.png" alt="">
+        <p class="myName">Andrey Potashin</p>
+        <p class="profession">JS developer</p>
+      </span>
+      <nav>
+        <button>About Me</button>
+        <button>My projects</button>
+        <button>Information</button>
+        <button>Contacts</button>
+      </nav>
+    </header>
+
+    <div class="introSection">
+      <div class="intro">
+        <p>Hello, I am </p>
+        <h1>Andrey Potashin</h1>
+        <p>JS developer</p>
+        <p>This web page will help you learn a little more about me. Here you can see my projects, see links to my accounts on social networks and contact me.</p>
+      </div>
+      <div class="introImg">
+        <img src="utils/halfmewithlines.png" alt="">
+      </div>
+    </div>
+
     <div class="aboutMe">
-      <h2>Information</h2>
-      <p>Some general information about me:</p>
-      <ul class="information">
-        <li>Age: 19 years old</li>
-        <li>citizenship: Ufa, Russia</li>
-        <li>Public status: Student</li>
-      </ul>
-      <h2>Code experience</h2>
-      <p>
-          I began to actively study Web development in the summer of 2018.
-          After starting studying at a university, I mixed study and the web.
-          I participated in several local hackathons in the capital of his republic.
+      <div class="overflow">
+        <div class="slider">
+          <div class="slide selected" id="slide1"></div>
+          <div class="slide" id="slide2"></div>
+          <div class="slide" id="slide3"></div>
+          <div class="slide" id="slide4"></div>
+        </div>
+      </div>
+      <div class="aboutMeDescription">
+        <h2>A few details about myself</h2>
+        <p>I began to actively study Web development in the summer of 2018.<br>
+          After starting studying at a university, I mixed study and the web.<br>
+          I participated in several local hackathons in the capital of my republic.<br>
           Was in ModuleScholl at the spring 2019.
-      </p>
-      <h2>My skills</h2>
-      <ul class="mySkills">
+        </p>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="projectsSlider">
+        <div class="sim-slider">
+            <div class="sim-slider-arrow-left"><img src="https://img.icons8.com/material/24/ffffff/back--v1.png"></div>
+            <div class="sim-slider-list">
+              <a class="sim-slider-element" href="http://localhost/rsschool-cv/projects/index.html"><img src="utils/theyalow.jpg"></a>
+              <a class="sim-slider-element" href=""><img src="utils/noproject.png"></a>
+            </div>
+            <div class="sim-slider-arrow-right"><img src="https://img.icons8.com/material/24/ffffff/forward--v4.png"></div>
+          </div>
+      </div>
+      <div class="projD">
+        <h2>my projects</h2>
+        <p>Here you can see my projects (click on the image to go to the project).</p>
+      </div>
+    </div>
+
+    <div class="personalInfo">
+      <div class="infoDescription">
+        <h2>my skills and practice </h2>
+        <ul>
           <li>JavaScript: ES2019</li>
           <li>HTML: HTML5, WebComponents</li>
           <li>CSS: CSS3, flex, grid, etc.</li>
           <li>MySQL/postgres: entry level</li>
           <li>Git</li>
-      </ul>
-      <p>You can find some examples of my code on <a href="https://github.com/PotashinAndrey/">my GitHub</a>.</p>
+        </ul>
+      </div>
+      <div class="infoImg">
+        <img src="utils/HCJ.png" alt="">
+      </div>
     </div>
-      <h2>Contacts</h2>
+
     <div class="contacts">
+      <h2>Contact me</h2>
       <ul>
-        <li>phone: +7 964 965 88 86</li>
-        <li>email: potashin@ro.ru</li>
-        <li>telegram: @PotashinAndrey</li>
+        <li><a href="https://www.instagram.com/potashin5/"><img src="https://img.icons8.com/material/50/ffffff/camera.png"></a></li>
+        <li><a href="https://vk.com/potashin"><img src="https://img.icons8.com/ios-glyphs/50/ffffff/vk-circled.png"></a></li>
+        <li><a href="https://github.com/PotashinAndrey"><img src="https://img.icons8.com/material-outlined/50/ffffff/github.png"></a></li>
+        <li><a href="https://t.me/potashinandrey"><img src="https://img.icons8.com/windows/50/ffffff/telegram-app.png"></a></li>
+        <li><a href="mailto:potashin@ro.ru"><img src="https://img.icons8.com/ios-filled/50/ffffff/marked-mail.png"></a></li>
       </ul>
+
     </div>
-  </main>
+
+</div>
+
 </body>
 </html>
