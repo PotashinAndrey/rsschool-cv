@@ -1,0 +1,76 @@
+
+.sim-slider-element > img {
+  width: 100% !important;
+}
+
+.sim-slider {
+  max-width: 640px;
+  min-width: 640px;
+  height: calc(100% + 1px);
+}
+
+.sim-slider {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-areas: 'ssal ssl ssar';
+  align-content: center;
+  justify-content: center;
+}
+
+.sim-slider-list {
+  grid-area: ssl;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  top: -172px;
+}
+
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 4;
+}
+
+div.sim-slider-arrow-left > img,
+div.sim-slider-arrow-right > img {
+  margin-left: 10px;
+}
+
+div.sim-slider-arrow-left {
+  grid-area: ssal;
+
+  display: block;
+}
+
+div.sim-slider-arrow-right {
+  grid-area: ssar;
+
+  display: block;
+}
+
+div.sim-slider-arrow-left:hover {
+  opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover {
+  opacity: 1.0;
+}
